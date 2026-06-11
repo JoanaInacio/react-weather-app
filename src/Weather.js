@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Weather.css";
 
@@ -11,7 +11,7 @@ export default function Weather(props) {
       city: response.data.city,
       temperature: Math.round(response.data.temperature.current),
       humidity: response.data.temperature.humidity,
-      wind: Math.round(response.data.wind.speed),
+      wind: Math.round(response.data.wind.speed * 3.6), // API gives m/s; ×3.6 → km/h
       description: response.data.condition.description,
       icon: response.data.condition.icon_url
     });
@@ -22,6 +22,12 @@ export default function Weather(props) {
     const url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(url).then(handleResponse);
   }
+
+  // Run once when the component first loads, to show the default city
+  useEffect(() => {
+    search();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function handleSubmit(event) {
     event.preventDefault();

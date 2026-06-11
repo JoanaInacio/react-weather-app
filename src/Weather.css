@@ -6,14 +6,18 @@
 
 .Weather {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
 .Weather form {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .Weather input {
@@ -24,6 +28,11 @@
   font-size: 16px;
 }
 
+.Weather input:focus {
+  outline: none;
+  border-color: #4dd0e1;
+}
+
 .Weather button {
   padding: 10px 20px;
   border: none;
@@ -31,22 +40,55 @@
   background-color: #4dd0e1;
   color: #fff;
   font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.temperature {
-  font-size: 64px;
+.Weather button:hover {
+  background-color: #26c6da;
+}
+
+.weather-info h1 {
+  font-size: 36px;
   font-weight: 700;
-  color: #4dd0e1;
+  margin-bottom: 5px;
+}
+
+.weather-details {
+  list-style: none !important;
+  padding: 0;
+  margin: 0 0 15px 0;
+  color: #555;
+  line-height: 1.6;
 }
 
 .description {
   text-transform: capitalize;
-  font-size: 18px;
 }
 
-.weather-info ul {
-  list-style: none;
-  padding: 0;
-  color: #555;
+.weather-temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.temperature {
+  font-size: 72px;
+  font-weight: 700;
+  color: #4dd0e1;
+  line-height: 1;
+}
+
+.unit {
+  font-size: 28px;
+  color: #4dd0e1;
+  align-self: flex-start;
+  margin-top: 8px;
 }
