@@ -92,3 +92,75 @@
   align-self: flex-start;
   margin-top: 8px;
 }
+.Forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 8px;
+}
+
+.forecast-day {
+  flex: 1;
+  text-align: center;
+}
+
+.forecast-dayname {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.forecast-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast-temps {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.forecast-max {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.forecast-min {
+  color: #888;
+}
+.Forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 8px;
+}
+
+.forecast-day {
+  flex: 1;
+  text-align: center;
+}
+
+.forecast-dayname {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.forecast-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast-temps {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.forecast-max {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.forecast-min {
+  color: #888;
+}
