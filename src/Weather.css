@@ -1,0 +1,52 @@
+.app-title {
+  text-align: center;
+  color: #26c6da;
+  font-weight: 700;
+}
+
+.Weather {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Weather form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Weather input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.Weather button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4dd0e1;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.temperature {
+  font-size: 64px;
+  font-weight: 700;
+  color: #4dd0e1;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.weather-info ul {
+  list-style: none;
+  padding: 0;
+  color: #555;
+}
